@@ -35,18 +35,20 @@
   line-height: normal;
   text-align: center;
 }
-.header .total {
+
+.total {
   border-radius: 20px;
   background: #FFF;
   box-shadow: 8px 13px 44px -6px #DFDBF6;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 40px;
 }
-.header .total .total_text {
+.total .total_text {
   padding: 40px;
 }
-.header .total .total_text h2 {
+.total .total_text h2 {
   color: #000;
   font-family: Mulish;
   font-size: 25px;
@@ -55,7 +57,7 @@
   line-height: normal;
   margin-bottom: 20px;
 }
-.header .total .total_text p {
+.total .total_text p {
   color: #4FD18B;
   font-family: Inter;
   font-size: 23px;
@@ -64,7 +66,7 @@
   line-height: normal;
   margin-bottom: 20px;
 }
-.header .total .total_text .btn {
+.total .total_text .btn {
   color: #FFF;
   text-align: center;
   font-family: Mulish;
@@ -76,24 +78,24 @@
   text-transform: uppercase;
   margin-right: 20px;
 }
-.header .total .total_text .btn_outcome {
+.total .total_text .btn_minus {
   border-radius: 46.057px;
   background: var(--main-primary, #4C49ED);
   padding: 14.171px 24.8px;
 }
-.header .total .total_text .btn_income {
+.total .total_text .btn_plus {
   color: #4C49ED;
   border-radius: 46.057px;
   border: 2px solid #4C49ED;
   background: #FFF;
   padding: 14.171px 24.8px;
 }
-.header .total .balanc {
+.total .balanc {
   border-radius: 155px 20px 20px 155px;
   background: #4C49ED;
   padding: 80px 40px;
 }
-.header .total .balanc_text {
+.total .balanc_text {
   color: #FFF;
   font-family: Muli;
   font-size: 13px;
@@ -103,7 +105,7 @@
   letter-spacing: 0.52px;
   text-transform: uppercase;
 }
-.header .total .balanc_num {
+.total .balanc_num {
   color: #FFF;
   font-family: Inter;
   font-size: 45px;
@@ -111,7 +113,7 @@
   font-weight: 800;
   line-height: normal;
 }
-.header .total .balanc_num span {
+.total .balanc_num span {
   color: rgba(255, 255, 255, 0.31);
   font-family: Inter;
   font-size: 19px;

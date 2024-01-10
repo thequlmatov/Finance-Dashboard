@@ -4,7 +4,6 @@
       <header class="modal-header">
         <slot name="header">
           <img v-on:click="closeModal" src="../img/568140 1.png" alt="close button">
-
         </slot>
       </header>
       <main>
@@ -19,6 +18,7 @@
 <script>
 export default {
   emits: ["closeModalEmit"],
+  props: ["balanceType"],
   methods: {
     closeModal() {
       this.$emit("closeModalEmit")

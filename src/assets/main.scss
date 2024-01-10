@@ -20,6 +20,7 @@
     padding: 0 20px;
   }
 
+  // ********** HEADER SECTION  **********
   .header {
     margin-bottom: 2.6rem;
 
@@ -37,106 +38,119 @@
         text-align: center;
       }
     }
+  }
+  // --------------------------------------------
 
 
 
-    .total {
-      border-radius: 20px;
-      background: #FFF;
-      box-shadow: 8px 13px 44px -6px #DFDBF6;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+  //********** FIRST SECTION  **********
 
-      .total_text {
-        padding: 40px;
+  .total {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 8px 13px 44px -6px #DFDBF6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
 
-        h2 {
-          color: #000;
-          font-family: Mulish;
-          font-size: 25px;
-          font-style: normal;
-          font-weight: 900;
-          line-height: normal;
-          margin-bottom: 20px;
-        }
+    .total_text {
+      padding: 40px;
 
-        p {
-          color: #4FD18B;
-          font-family: Inter;
-          font-size: 23px;
-          font-style: normal;
-          font-weight: 800;
-          line-height: normal;
-          margin-bottom: 20px;
-        }
-
-        .btn {
-          color: #FFF;
-          text-align: center;
-          font-family: Mulish;
-          font-size: 13px;
-          font-style: normal;
-          font-weight: 900;
-          line-height: normal;
-          letter-spacing: 0.52px;
-          text-transform: uppercase;
-          margin-right: 20px;
-        }
-
-        .btn_outcome {
-          border-radius: 46.057px;
-          background: var(--main-primary, #4C49ED);
-          padding: 14.171px 24.8px;
-        }
-
-        .btn_income {
-          color: #4C49ED;
-          border-radius: 46.057px;
-          border: 2px solid #4C49ED;
-          background: #FFF;
-          padding: 14.171px 24.8px;
-        }
+      h2 {
+        color: #000;
+        font-family: Mulish;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        margin-bottom: 20px;
       }
 
-      .balanc {
-        border-radius: 155px 20px 20px 155px;
-        background: #4C49ED;
-        padding: 80px 40px;
+      p {
+        color: #4FD18B;
+        font-family: Inter;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        margin-bottom: 20px;
+      }
+
+      .btn {
+        color: #FFF;
+        text-align: center;
+        font-family: Mulish;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: 0.52px;
+        text-transform: uppercase;
+        margin-right: 20px;
+      }
+
+      .btn_minus {
+        border-radius: 46.057px;
+        background: var(--main-primary, #4C49ED);
+        padding: 14.171px 24.8px;
+      }
+
+      .btn_plus {
+        color: #4C49ED;
+        border-radius: 46.057px;
+        border: 2px solid #4C49ED;
+        background: #FFF;
+        padding: 14.171px 24.8px;
+      }
+    }
+
+    .balanc {
+      border-radius: 155px 20px 20px 155px;
+      background: #4C49ED;
+      padding: 80px 40px;
 
 
 
-        &_text {
-          color: #FFF;
-          font-family: Muli;
-          font-size: 13px;
-          font-style: normal;
-          font-weight: 900;
-          line-height: normal;
-          letter-spacing: 0.52px;
-          text-transform: uppercase;
-        }
+      &_text {
+        color: #FFF;
+        font-family: Muli;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: 0.52px;
+        text-transform: uppercase;
+      }
 
-        &_num {
-          color: #FFF;
+      &_num {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+
+        span {
+          color: rgba(255, 255, 255, 0.31);
           font-family: Inter;
-          font-size: 45px;
+          font-size: 19px;
           font-style: normal;
           font-weight: 800;
           line-height: normal;
-
-          span {
-            color: rgba(255, 255, 255, 0.31);
-            font-family: Inter;
-            font-size: 19px;
-            font-style: normal;
-            font-weight: 800;
-            line-height: normal;
-          }
         }
       }
     }
   }
+  // --------------------------------
+
+
+ //********** SECOND SECTION  **********
+
+
+
+
+
   //---------------   Main style section  -------------------------------
 
   .transaction_history {
@@ -209,6 +223,7 @@
     }
 
     .total {
+
       .total_text {
         h2 {
           font-size: 20px;

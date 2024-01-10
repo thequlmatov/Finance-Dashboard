@@ -1,19 +1,15 @@
 <template>
-  <SiteHeader />
-  <SiteMain />
+<AllComponents/>
 </template>
 
 
 <script>
-import SiteHeader from './components/SiteHeader.vue'
-import SiteMain from './components/SiteMain.vue';
-import "@/assets/main.css"
+  import AllComponents from './components/AllComponents.vue';
 
 export default {
   name: 'App',
   components: {
-    SiteHeader,
-    SiteMain,
+    AllComponents
   },
 
 }
