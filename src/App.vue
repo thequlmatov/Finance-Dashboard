@@ -1,18 +1,18 @@
 <template>
-<AllComponents/>
-</template>
+  <AllComponents/>
+  </template>
 
 
-<script>
-  import AllComponents from './components/AllComponents.vue';
+  <script>
+    import AllComponents from './components/AllComponents.vue';
 
-export default {
-  name: 'App',
-  components: {
-    AllComponents
-  },
+  export default {
+    name: 'App',
+    components: {
+      AllComponents
+    },
 
-}
-</script>
+  }
+  </script>
 
-<style lang="scss"></style>
+  <style lang="scss"></style>

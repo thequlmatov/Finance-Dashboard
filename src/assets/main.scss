@@ -1,295 +1,295 @@
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Mulish:wght@800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Mulish:wght@800;900&display=swap');
 
 
-  * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
 
-  .body {
-    font-size: 16px;
-  }
+.body {
+  font-size: 16px;
+}
 
-  .container {
-    max-width: 1240px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-  // ********** HEADER SECTION  **********
-  .header {
+// ********** HEADER SECTION  **********
+.header {
+  margin-bottom: 2.6rem;
+
+  .site_nav {
+    background: #E1E1F5;
     margin-bottom: 2.6rem;
-
-    .site_nav {
-      background: #E1E1F5;
-      margin-bottom: 2.6rem;
-      padding: 0.3rem 0;
-      h1 {
-        color: #000;
-        font-family: Inter;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
-        text-align: center;
-      }
+    padding: 0.3rem 0;
+    h1 {
+      color: #000;
+      font-family: Inter;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+      text-align: center;
     }
   }
-  // --------------------------------------------
+}
+// --------------------------------------------
 
 
 
-  //********** FIRST SECTION  **********
+//********** FIRST SECTION  **********
 
-  .total {
-    border-radius: 20px;
-    background: #FFF;
-    box-shadow: 8px 13px 44px -6px #DFDBF6;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 40px;
+.total {
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 8px 13px 44px -6px #DFDBF6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
 
-    .total_text {
-      padding: 40px;
-
-      h2 {
-        color: #000;
-        font-family: Mulish;
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: normal;
-        margin-bottom: 20px;
-      }
-
-      p {
-        color: #4FD18B;
-        font-family: Inter;
-        font-size: 23px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
-        margin-bottom: 20px;
-      }
-
-      .btn {
-        color: #FFF;
-        text-align: center;
-        font-family: Mulish;
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: normal;
-        letter-spacing: 0.52px;
-        text-transform: uppercase;
-        margin-right: 20px;
-      }
-
-      .btn_minus {
-        border-radius: 46.057px;
-        background: var(--main-primary, #4C49ED);
-        padding: 14.171px 24.8px;
-      }
-
-      .btn_plus {
-        color: #4C49ED;
-        border-radius: 46.057px;
-        border: 2px solid #4C49ED;
-        background: #FFF;
-        padding: 14.171px 24.8px;
-      }
-    }
-
-    .balanc {
-      border-radius: 155px 20px 20px 155px;
-      background: #4C49ED;
-      padding: 80px 40px;
-
-
-
-      &_text {
-        color: #FFF;
-        font-family: Muli;
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: normal;
-        letter-spacing: 0.52px;
-        text-transform: uppercase;
-      }
-
-      &_num {
-        color: #FFF;
-        font-family: Inter;
-        font-size: 45px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
-
-        span {
-          color: rgba(255, 255, 255, 0.31);
-          font-family: Inter;
-          font-size: 19px;
-          font-style: normal;
-          font-weight: 800;
-          line-height: normal;
-        }
-      }
-    }
-  }
-  // --------------------------------
-
-
- //********** SECOND SECTION  **********
-
-
-
-
-
-  //---------------   Main style section  -------------------------------
-
-  .transaction_history {
-    border-radius: 16px;
-    background: #FFF;
-    padding: 24px 25px;
-    box-shadow: 8px 13px 44px -6px #DFDBF6;
+  .total_text {
+    padding: 40px;
 
     h2 {
       color: #000;
       font-family: Mulish;
-      font-size: 20px;
+      font-size: 25px;
       font-style: normal;
       font-weight: 900;
       line-height: normal;
-      letter-spacing: -0.4px;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
     }
 
-    &__list {
-      &__item {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 80px;
+    p {
+      color: #4FD18B;
+      font-family: Inter;
+      font-size: 23px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+      margin-bottom: 20px;
+    }
 
-        h3 {
-          color: #000;
-          font-family: Mulish;
-          font-size: 17px;
-          font-style: normal;
-          font-weight: 800;
-          line-height: normal;
-          letter-spacing: -0.34px;
-        }
+    .btn {
+      color: #FFF;
+      text-align: center;
+      font-family: Mulish;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      letter-spacing: 0.52px;
+      text-transform: uppercase;
+      margin-right: 20px;
+    }
 
-        p {
-          color: #D14F4F;
-          text-align: right;
-          font-family: Mulish;
-          font-size: 18px;
-          font-style: normal;
-          font-weight: 800;
-          line-height: normal;
-          letter-spacing: -0.36px;
-        }
+    .btn_minus {
+      border-radius: 46.057px;
+      background: var(--main-primary, #4C49ED);
+      padding: 14.171px 24.8px;
+    }
 
-        .green {
-          color: #6ED69E;
-        }
+    .btn_plus {
+      color: #4C49ED;
+      border-radius: 46.057px;
+      border: 2px solid #4C49ED;
+      background: #FFF;
+      padding: 14.171px 24.8px;
+    }
+  }
+
+  .balanc {
+    border-radius: 155px 20px 20px 155px;
+    background: #4C49ED;
+    padding: 80px 40px;
+
+
+
+    &_text {
+      color: #FFF;
+      font-family: Muli;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      letter-spacing: 0.52px;
+      text-transform: uppercase;
+    }
+
+    &_num {
+      color: #FFF;
+      font-family: Inter;
+      font-size: 45px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+
+      span {
+        color: rgba(255, 255, 255, 0.31);
+        font-family: Inter;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+      }
+    }
+  }
+}
+// --------------------------------
+
+
+//********** SECOND SECTION  **********
+
+
+
+
+
+//---------------   Main style section  -------------------------------
+
+.transaction_history {
+  border-radius: 16px;
+  background: #FFF;
+  padding: 24px 25px;
+  box-shadow: 8px 13px 44px -6px #DFDBF6;
+
+  h2 {
+    color: #000;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 80px;
+
+      h3 {
+        color: #000;
+        font-family: Mulish;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: -0.34px;
+      }
+
+      p {
+        color: #D14F4F;
+        text-align: right;
+        font-family: Mulish;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: -0.36px;
+      }
+
+      .green {
+        color: #6ED69E;
+      }
+    }
+  }
+}
+
+
+
+// ------ responsive
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .header {
+    .site_nav {
+      h1 {
+        font-size: 24px;
       }
     }
   }
 
+  .total {
 
+    .total_text {
+      h2 {
+        font-size: 20px;
+      }
+    }
+  }
 
-  // ------ responsive
-
-
-  @media only screen and (max-width: 600px) {
-    body {
+  .transaction_history__list__item {
+    h3 {
       font-size: 14px;
     }
+  }
+}
 
-    .header {
-      .site_nav {
-        h1 {
-          font-size: 24px;
-        }
-      }
-    }
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
 
-    .total {
-
-      .total_text {
-        h2 {
-          font-size: 20px;
-        }
-      }
-    }
-
-    .transaction_history__list__item {
-      h3 {
-        font-size: 14px;
+  .header {
+    .site_nav {
+      h1 {
+        font-size: 28px;
       }
     }
   }
 
-  @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    body {
+  .total {
+    .total_text {
+      h2 {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .transaction_history__list__item {
+    h3 {
       font-size: 16px;
     }
+  }
+}
 
-    .header {
-      .site_nav {
-        h1 {
-          font-size: 28px;
-        }
-      }
-    }
+@media only screen and (min-width: 1025px) {
+  body {
+    font-size: 18px;
+  }
 
-    .total {
-      .total_text {
-        h2 {
-          font-size: 22px;
-        }
-      }
-    }
-
-    .transaction_history__list__item {
-      h3 {
-        font-size: 16px;
+  .header {
+    .site_nav {
+      h1 {
+        font-size: 32px;
       }
     }
   }
 
-  @media only screen and (min-width: 1025px) {
-    body {
-      font-size: 18px;
-    }
-
-    .header {
-      .site_nav {
-        h1 {
-          font-size: 32px;
-        }
-      }
-    }
-
-    .total {
-      .total_text {
-        h2 {
-          font-size: 25px;
-        }
-      }
-    }
-
-    .transaction_history__list__item {
-      h3 {
-        font-size: 17px;
+  .total {
+    .total_text {
+      h2 {
+        font-size: 25px;
       }
     }
   }
+
+  .transaction_history__list__item {
+    h3 {
+      font-size: 17px;
+    }
+  }
+}

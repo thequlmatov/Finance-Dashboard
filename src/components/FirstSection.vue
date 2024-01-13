@@ -41,7 +41,7 @@
               </div>
 
             </div>
-            <button ref="componentRef" type="button" @click="toastMsg(),addBalance()" class="add-income_btn">Добавить доход</button>
+            <button ref="componentRef" type="button" @click="addBalance(),toastMsg()" class="add-income_btn">Добавить доход</button>
           </form>
         </template>
       </balance-modal>
@@ -69,7 +69,7 @@ export default {
       showToast: false,
       balanceQuantity: null,
       balanceComment: "",
-      //num : this.$store.state.num,
+      num : this.$store.state.num,
       balanceType: ["plus","minus"],
       activeBalanceType:""
     };
@@ -80,7 +80,7 @@ export default {
       this.activeBalanceType = type
     },
     showInputText() {
-      console.log(this.inputStr);
+      // console.log(this.inputStr);
     },
     double() {
       this.$store.commit("plusNum",5);
@@ -88,26 +88,16 @@ export default {
     addBalance() {
       const balanceDate = {
         balanceQuantity: this.balanceQuantity,
-        balanceComment: this.balanceComment,
+        balanceComment: this.inputComnt,
         balanceType: this.activeBalanceType,
         for_date: "10.01.2024",
       };
       this.$store.commit("addBalance", balanceDate);
-      console.log(this.getChangedBalance);
+      // console.log(this.getChangedBalance);
     },
-    computed: {
-      getChangedBalance() {
-        return this.$store.state.balance;
-      },
-    },
-
-
-
-
     toastMsg() {
-
-      if (this.inputStr !== "" && this.inputComnt !== "") {
-        this.inputStr = "";
+      if (this.balanceQuantity !== "" && this.inputComnt !== "") {
+        this.balanceQuantity = "";
         this.inputComnt = "";
         this.status = "success"
         this.showToast = true
@@ -116,17 +106,24 @@ export default {
           this.showToast = false;
         }, 4900);
       } else {
-        console.log("Ishlavotiyu")
         this.status = "error"
         this.showToast = true
-        this.inputStr = "";
+        this.balanceQuantity = "";
         this.inputComnt = "";
         setTimeout(() => {
           this.showToast = false;
         }, 4900);
       }
+    },
+  },
+  watch: {
+    inputComnt(val) {
     }
-
+  },
+  computed: {
+    getChangedBalance() {
+      return this.$store.state.balance;
+    },
   },
 }
 </script>
