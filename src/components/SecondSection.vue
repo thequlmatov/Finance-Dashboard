@@ -1,7 +1,10 @@
 <template>
   <div class="container">
     <section class="transaction_history">
-      <h2>История транзакций</h2>
+      <div class="transaction_history__line">
+        <h2>История транзакций</h2>
+        <a href="#"><p>Все истории <img src="../img/history_icon.png" alt=""></p></a>
+      </div>
       <ul class="transaction_history__list">
         <transaction-com
           v-for="balance in getChangedBalance"
@@ -10,18 +13,7 @@
           :quantity="balance.quantity"
           :type="balance.type"
         />
-        <!-- <li class="transaction_history__list__item">
-            <h3>Купил кроссовки</h3>
-            <p>-$35.00</p>
-          </li>
-          <li class="transaction_history__list__item">
-            <h3>Зарплата</h3>
-            <p class="green">+$300.58</p>
-          </li>
-          <li class="transaction_history__list__item">
-            <h3>Withdrawal</h3>
-            <p>-$35.00</p>
-          </li> -->
+
       </ul>
 
     </section>

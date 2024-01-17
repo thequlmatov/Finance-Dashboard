@@ -88,12 +88,14 @@
       letter-spacing: 0.52px;
       text-transform: uppercase;
       margin-right: 20px;
+      cursor: pointer;
     }
 
     .btn_minus {
       border-radius: 46.057px;
       background: var(--main-primary, #4C49ED);
       padding: 14.171px 24.8px;
+      border: none;
     }
 
     .btn_plus {
@@ -159,16 +161,39 @@
   padding: 24px 25px;
   box-shadow: 8px 13px 44px -6px #DFDBF6;
 
-  h2 {
-    color: #000;
-    font-family: Mulish;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-    letter-spacing: -0.4px;
+  &__line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 50px;
+
+    h2 {
+      color: #000;
+      font-family: Mulish;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      letter-spacing: -0.4px;
+    }
+
+    p {
+      font-family: Mulish;
+      font-size: 20px;
+      font-style: normal;
+      color: rgb(232, 139, 139);
+      letter-spacing: -0.4px;
+      display: flex;
+      align-items: center;
+      img {
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+      }
+    }
   }
+
+
 
   &__list {
     &__item {
@@ -187,7 +212,6 @@
       }
 
       p {
-        color: #D14F4F;
         text-align: right;
         font-family: Mulish;
         font-size: 18px;
@@ -197,7 +221,21 @@
         letter-spacing: -0.36px;
       }
 
-      .green {
+      .minus_red {
+        color: #D14F4F;
+      }
+
+      .minus_red::before {
+        content: "-";
+        color: #D14F4F;
+      }
+
+      .plus_green {
+        color: #6ED69E;
+      }
+
+      .plus_green::before {
+        content: "+";
         color: #6ED69E;
       }
     }

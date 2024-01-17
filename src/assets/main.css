@@ -77,11 +77,13 @@
   letter-spacing: 0.52px;
   text-transform: uppercase;
   margin-right: 20px;
+  cursor: pointer;
 }
 .total .total_text .btn_minus {
   border-radius: 46.057px;
   background: var(--main-primary, #4C49ED);
   padding: 14.171px 24.8px;
+  border: none;
 }
 .total .total_text .btn_plus {
   color: #4C49ED;
@@ -128,7 +130,13 @@
   padding: 24px 25px;
   box-shadow: 8px 13px 44px -6px #DFDBF6;
 }
-.transaction_history h2 {
+.transaction_history__line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.transaction_history__line h2 {
   color: #000;
   font-family: Mulish;
   font-size: 20px;
@@ -136,7 +144,20 @@
   font-weight: 900;
   line-height: normal;
   letter-spacing: -0.4px;
-  margin-bottom: 50px;
+}
+.transaction_history__line p {
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  color: rgb(232, 139, 139);
+  letter-spacing: -0.4px;
+  display: flex;
+  align-items: center;
+}
+.transaction_history__line p img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
 }
 .transaction_history__list__item {
   display: flex;
@@ -153,7 +174,6 @@
   letter-spacing: -0.34px;
 }
 .transaction_history__list__item p {
-  color: #D14F4F;
   text-align: right;
   font-family: Mulish;
   font-size: 18px;
@@ -162,7 +182,18 @@
   line-height: normal;
   letter-spacing: -0.36px;
 }
-.transaction_history__list__item .green {
+.transaction_history__list__item .minus_red {
+  color: #D14F4F;
+}
+.transaction_history__list__item .minus_red::before {
+  content: "-";
+  color: #D14F4F;
+}
+.transaction_history__list__item .plus_green {
+  color: #6ED69E;
+}
+.transaction_history__list__item .plus_green::before {
+  content: "+";
   color: #6ED69E;
 }
 
